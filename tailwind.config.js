@@ -2,9 +2,10 @@
 const withUiKit = require('@pezeshk-book/ui-kit/dist/withUiKit');
 const plugin = require('tailwindcss/plugin')
 
-module.exports = withUiKit({
+module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx,svg}"
+    "./src/**/*.{js,jsx,ts,tsx,svg}",
+    "./node_modules/@pezeshk-book/ui-kit/**/*"
   ],
   theme: {
     extend: {},
@@ -24,4 +25,4 @@ module.exports = withUiKit({
       })
     }),
   ],
-})
+}
