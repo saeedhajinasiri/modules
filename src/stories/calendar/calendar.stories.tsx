@@ -1,13 +1,14 @@
 import React from "react";
-import Calendar from "../modules/calender/index";
 import {ComponentMeta, ComponentStory} from "@storybook/react";
-import {CalenderProps} from "../modules/calender/calender.props";
+import {Calendar} from "./calendar";
+import {CalendarProps} from "../../modules/calendar/calendar.props";
 
 export default {
   title: "Calendar",
   component: Calendar,
+  argTypes: {},
 } as ComponentMeta<typeof Calendar>;
 
-const Template: ComponentStory<typeof Calendar> = ({...args}:CalenderProps) => <Calendar {...args} />;
+const Template: ComponentStory<typeof Calendar> = (args: CalendarProps) => <Calendar {...args} />;
 
 export const Default = Template.bind({});
