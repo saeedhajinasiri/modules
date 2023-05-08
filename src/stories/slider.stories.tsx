@@ -8,6 +8,6 @@ export default {
   component: Slider,
 } as ComponentMeta<typeof Slider>;
 
-const Template: ComponentStory<typeof Slider> = ({...args}:SliderProps) => <Slider {...args} />;
+const Template: ComponentStory<typeof Slider> = ({...args}: SliderProps) => <Slider {...args} />;
 
 export const Default = Template.bind({});
