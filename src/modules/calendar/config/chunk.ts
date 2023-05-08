@@ -24,6 +24,7 @@ function slice(array: [], start: number, end: number) {
   }
   return result;
 }
+
 export function chunk(array: any, size: any) {
   size = Math.max(size, 0);
   const length = array == null ? 0 : array.length;

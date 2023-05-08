@@ -3,17 +3,6 @@ export const addDays = (date: any, number: number) => {
   return new Date(newDate.setDate(newDate.getDate() + number));
 }
 
-export const convertDate = (date: string | number | Date, format = "YYYY-MM-DD") => {
-  if (date) {
-    let moment = require('jalali-moment');
-
-    return moment(date).locale('fa').format(format);
-  }
-
-  return null;
-};
-
-
 export const timeDifference = (date: Date) => {
   if (date) {
     let moment = require('jalali-moment');

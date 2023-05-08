@@ -21,13 +21,13 @@ const DaysHead = (props: DaysHeadProps) => {
           </Text>
         </Div>
         <Div className={'items-center mr-8'}>
-          <Button variant={"text"} size={'small'} className={'flex items-center'} onClick={increaseMonth} shape={'circle'} disabled={forward}>
+          <Button variant={"text"} size={'small'} className={'flex items-center'} onClick={increaseMonth} shape={'square'} disabled={forward}>
             <Div className={'h-3 w-[6px] relative'}>
               <img src={ArrowLeftIcon} className={'w-full h-full object-contain'} alt={'ماه بعد'}/>
             </Div>
           </Button>
-          <Text className={'mx-1'} color={"grey.900"} type={'bold'} typography={"xxxl"}>{monthName}</Text>
-          <Button variant={"text"} size={'small'} className={'flex items-center'} onClick={decreaseMonth} shape={'circle'} disabled={backDisable}>
+          <Text className={'mx-1'} color={"grey.900"} type={'bold'} typography={"xxl"}>{monthName}</Text>
+          <Button variant={"text"} size={'small'} className={'flex items-center'} onClick={decreaseMonth} shape={'square'} disabled={backDisable}>
             <Div className={'h-3 w-[6px] relative'}>
               <img src={ArrowRightIcon} className={'w-full h-full object-contain'} alt={'ماه قبل'}/>
             </Div>
