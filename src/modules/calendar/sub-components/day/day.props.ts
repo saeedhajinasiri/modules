@@ -1,10 +1,9 @@
 export interface DayProps {
+  isSelecting?: boolean
 
-  isSelecting?: boolean;
+  daysEvent?: () => void
 
-  daysEvent?: () => void;
-
-  selectedDay?: boolean;
+  selectedDay?: boolean
 
   children: any
 

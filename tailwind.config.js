@@ -4,7 +4,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = withUiKit({
   content: [
-    "./src/**/*.{js,jsx,ts,tsx,svg}"
+    "./src/**/*.{js,jsx,ts,tsx,svg}",
   ],
   theme: {
     extend: {},

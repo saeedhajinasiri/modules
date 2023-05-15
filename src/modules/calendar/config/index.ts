@@ -1,11 +1,10 @@
-import {fa, formatJalaliDate, weekDayNames} from "./week-day"
+import {fa, weekDayNames} from "./week-day"
 import {chunk} from './chunk'
 import {daysInMonth, IDays, IDaysInMonth} from './daysIn-month'
 
 export {
   daysInMonth,
   fa,
-  formatJalaliDate,
   weekDayNames,
   chunk
 }

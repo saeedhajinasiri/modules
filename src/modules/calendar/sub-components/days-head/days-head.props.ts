@@ -1,10 +1,9 @@
 export interface DaysHeadProps {
+  monthName: string
 
-  monthName: string;
+  increaseMonth?: () => void
 
-  increaseMonth?: () => void;
-
-  decreaseMonth?: () => void;
+  decreaseMonth?: () => void
 
   startDate?: string
 
